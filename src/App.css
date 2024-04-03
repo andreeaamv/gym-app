@@ -1,0 +1,122 @@
+body {
+    font-family: 'Open Sans';
+    background-color: #191f2a;
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+   
+  .react-horizontal-scrolling-menu--wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .detail-image {
+    width: 729px;
+    height: 742px;
+  }
+  
+  .hero-banner-img {
+    position: absolute;
+    right: 40px;
+    top: 15%;
+    width: 500px;
+    height: 500px;
+    margin-top: -100px;
+    box-shadow: 0 2px 12px 1px #023047;
+    border-radius: 30px;  
+  }
+  
+  .exercise-card {
+    width: 300px;
+    height: 345px;
+    background: #fff;
+    border-top: 4px solid #cdb4db;
+    border-bottom-left-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10px;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .exercise-card img {
+    height: 326px;
+  }
+  
+  .bodyPart-card {
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .exercise-card:hover,
+  .bodyPart-card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .search-btn:hover {
+    color: #FF2625 !important;
+    border: 1px solid #FF2625 !important;
+  }
+
+  .swiper {
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+  
+    
+  @media screen and (max-width:1200px) {
+    .detail-image {
+      width: 300px;
+      height: 300px;
+    }
+  
+  
+    .react-horizontal-scrolling-menu--scroll-container {
+      width: 500px;
+    }
+  
+  
+    .hero-banner-img {
+      display: none;
+    }
+  
+    .exercise-card {
+      width: 320px;
+    }  
+  }
+  
+  @media screen and (max-width:400px) {
+    .exercise-card {
+      width: 280px;
+    }
+  }
