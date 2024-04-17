@@ -16,7 +16,7 @@ export default function AppHeader() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="m-2">
-                  <Nav.Link href="#home" className='text-uppercase text-white'>Home</Nav.Link>
+                  <Nav.Link href="#home" className='text-uppercase text-white'>Home</Nav.Link>                  
                   <Nav.Link href="#reasons" className='text-uppercase text-white'>Reasons</Nav.Link>
                   <Nav.Link href="#exercises" className='text-uppercase text-white'>Exercises</Nav.Link>
                   <Nav.Link href="#contact" className='text-uppercase text-white'>Contact</Nav.Link>

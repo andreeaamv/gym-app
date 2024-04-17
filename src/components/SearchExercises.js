@@ -40,9 +40,9 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
   return (
     <>
       <section className="d-flex flex-column align-items-center gy-5 p-5 w-100">
-        <h1 className="mb-5 text-center fw-bolder text-danger"> Awesome Exercises You <br /> Should Know</h1>
+        <h1 className="mb-5 text-center fw-bolder text-dark"> Awesome Exercises You <br /> Should Know</h1>
         <div className="d-flex align-items-center gy-2">
-          <input value={search} onChange={(e) => setSearch(e.target.value.toLocaleLowerCase())} type="text" placeholder="Search Exercises..." style={{background:"#191f2a", color:"#fff"}} /> 
+          <input value={search} onChange={(e) => setSearch(e.target.value.toLocaleLowerCase())} type="text" placeholder="Search Exercises..." /> 
           <button onClick={handleSearch} className="bg-danger text-white top-50 py-1 px-1 rounded-1">Search</button>
         </div>
       </section>

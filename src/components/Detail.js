@@ -30,17 +30,17 @@ const Detail = ({ exerciseDetail }) => {
       
       <div className='flex flex-column align-items-center gy-6 text-center pt-11'>
         <h1 className='fw-bold text-capitalize mb-5 text-danger'>{name}</h1>
-        <p className='text-center text-white'>
+        <p className='text-center text-dark'>
             Exercises keep you healthy. <span className='text-danger'>{name}</span>{' '} is a great exercise to target your <span className='text-danger'>{target}</span>.<br/>
             It will help you build up your <span className='text-danger'>{bodyPart}</span> muscles.
         </p>
         {extraDetail.map(item => (
-            <span key={item.icon} className='flex flex-column gy-5 w-40 pt-5 text-white'>
+            <span key={item.icon} className='flex flex-column gy-5 w-40 pt-5 text-dark'>
               <div className='flex align-items-center gx-3'>
                 <div className='w-10 h-10'>
                   <img src={item.icon} alt={item.name} className="object-fit-cover" />
                 </div>
-                <h2 className='text-capitalize text-white'>{item.name}</h2>
+                <h2 className='text-capitalize text-dark'>{item.name}</h2>
               </div>
             </span>
         ))}

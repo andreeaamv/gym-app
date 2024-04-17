@@ -1,5 +1,6 @@
 import React from "react";
-import styled from "styled-components";
+import { ScrollMenu } from 'react-horizontal-scrolling-menu';
+
 import BodyPart from "./BodyPart";
 
 import All from "../assets/icons/All.png";
@@ -67,10 +68,10 @@ const HomeHorizontalScrollbar = ({ data, bodyPart, setBodyPart }) => {
 
 
   return (
-    <Div>
-      <ScrollMenuDiv>
+    <div className="d-flex">
+      <ScrollMenu>
         {BodyPartImage.map((item) => (
-          <Scroll
+          <div className="d-flex align-items-center"
             key={item.id || item.text}
             itemId={item.id || item.text}
             title={item.id || item.text}
@@ -81,38 +82,12 @@ const HomeHorizontalScrollbar = ({ data, bodyPart, setBodyPart }) => {
               setBodyPart={setBodyPart}
               bodyPart={bodyPart}
             />
-          </Scroll>
+          </div>
         ))}
-      </ScrollMenuDiv>
-    </Div>
+      </ScrollMenu>
+    </div>
   );
 };
 
-const Div = styled.div`
-  display: flex;
-  gap: 2.5rem;
-  @media screen and (min-width: 280px) and (max-width: 500px) {
-    gap: 1rem;
-  }
-`;
-const ScrollMenuDiv = styled.div`
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  ::-webkit-scrollbar {
-    display: none;
-  }
-`;
-
-const Scroll = styled.div`
-  display: flex;
-  padding: 1rem 1rem;
-  align-items: center;
-`;
 
 export default HomeHorizontalScrollbar;

@@ -6,7 +6,7 @@ import HorizontalScrollbar from "./HorizontalScrollbar";
 const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
   return (
     <>
-      <h3 className="mb-5 text-danger">
+      <h3 className="mb-5 text-dark fw-bold">
         Similar{" "}
         <span className="text-capitalize">
           Target Muscle
@@ -17,7 +17,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
         <HorizontalScrollbar data={targetMuscleExercises} />       
       </div>
 
-      <h3 className="mb-5 text-danger">
+      <h3 className="mb-5 text-dark fw-bold">
         Similar{" "}
         <span className="text-capitalize">
           Equipment

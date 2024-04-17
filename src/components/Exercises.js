@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import ExerciseCard from "./ExerciseCard";
@@ -20,9 +20,9 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
 
   return (
-    <div id="exercises" className="mt-5 p-2">
-      <h1 className="fw-bold mb-4 text-danger text-center">Showing results</h1>
-      <section className="flex flex-wrap mt-5 justify-content-evenly align-items-center w-50 g-5">
+    <div id="exercises" className="justify-content-center mt-5 p-2">
+      <h1 className="fw-bold mb-4 text-dark text-center">Showing results</h1>
+      <section className="flex flex-wrap flex-column mt-5 justify-content-center align-items-center w-50 g-5">
         {exercises.map((exercise, index) => (
           <ExerciseCard key={index} exercise={exercise} />
         ))}

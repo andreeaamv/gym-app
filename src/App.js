@@ -6,6 +6,10 @@ import ExerciseDetail from './pages/ExerciseDetail';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import BMI from './components/BMI';
+import Team from './components/Team';
+import MonthlyPlan from './components/MonthlyPlan';
+
 
 
 const App = () => {
@@ -16,6 +20,9 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/exercise/:id" element={<ExerciseDetail />} />
       </Routes>
+      <Team />
+      <MonthlyPlan />
+      <BMI />      
       <Footer />
     </div>
   )

@@ -1,122 +1,347 @@
 body {
-    font-family: 'Open Sans';
-    background-color: #191f2a;
-  }
-  
-  * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-  
-  }
+  font-family: 'Open Sans';
+  background-color: #D9BB9F;
+}
 
-  html{
-    scroll-behavior: smooth;
-  }
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+ 
+.react-horizontal-scrolling-menu--wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail-image {
+  width: 729px;
+  height: 742px;
+}
+
+.hero-banner-img {
+  position: absolute;
+  right: 40px;
+  top: 15%;
+  width: 500px;
+  height: 500px;
+  margin-top: -100px;
+  box-shadow: 0 2px 12px 1px #023047;
+  border-radius: 30px;  
+}
+
+.exercise-card {
+  width: 300px;
+  height: 345px;
+  background: #fff;
+  border-top: 4px solid #cdb4db;
+  border-bottom-left-radius: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card img {
+  height: 326px;
+}
+
+.bodyPart-card {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card:hover,
+.bodyPart-card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.search-btn:hover {
+  color: #FF2625 !important;
+  border: 1px solid #FF2625 !important;
+}
+
+.swiper {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+/* Team */
+
+.card-social a {
+  width: 40px;
+  height: 40px;
+}
+
+#heading h4 {
+  color: #e31c25;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+#heading h3 {
+
+  font-family: 'Oswald', sans-serif;
+}
+
+.team .card-body {
+  position: relative;
+  z-index: 2;
+
+}
+
+.team .card-body h4 {
+
+  color: #e31c25;
+  font-family: 'Oswald', sans-serif;
+}
+
+.bg-secondary {
+  background-color: #111 !important;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.team .card-social {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  transition: .5s;
+  z-index: 1;
+}
+
+.team .card:hover .card-social {
+  top: 0;
+  height: 80%;
+  opacity: 1;
+  background: rgba(0, 0, 0, .3);
+}
+
+/* BMI */
+
+.bmi::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bmi h4 {
+
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+}
+
+.bmi p {
+  font-size: 19px;
+}
+
+.bmi h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.bmi h4.text-primary {
+ 
+  color: #e31c25 !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: bolder;
+  letter-spacing: -1px;
+
+}
+
+.bmi .form-control {
+  min-height: calc(1.5em + (1rem + 2px));
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+
+}
+
+.bmi .form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #f18e92;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(227, 28, 37, .25);
+}
+
+.bmi .btn-wrap input:hover {
+
+  background-color: #e31c25 !important;
+
+}
+
+/* MonthlyPlan */
+
+#month {
+
+  background-color: #111;
+  color: white;
+  padding-bottom: 60px;
+  margin-top: 140px;
+}
+
+#month h6 {
+  color: #e31c25
+}
+
+#month h2,
+#month h3 {
+
+  font-family: 'Oswald', sans-serif;
+}
+
+.ps-item {
+
+  padding: 40px 30px 52px;
+  border: 1px solid #464646;
+  transform: skewY(-4deg);
+  transition: all 0.5s;
+  position: relative;
+}
+
+.ps-item h3 {
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 600;
+  transform: skewY(4deg);
+}
+
+.ps-item .pi-price {
+  transform: skewY(4deg);
+}
+
+.ps-item .pi-price h2 {
+  font-size: 60px;
+  color: #e31c25;
+  font-weight: 600;
+}
+
+.ps-item .pi-price span {
+  color: #c4c4c4;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.ps-item ul {
+
+  transform: skewY(4deg);
+}
+
+.ps-item ul li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #c4c4c4;
+  line-height: 32px;
+  list-style: none;
+
+}
+
+#month .btn {
+  font-size: 14px;
+  padding: 17px 30px 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transform: skewY(4deg);
+  background-color: #333333;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.ps-item:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.ps-item:hover h3 {
+  color: #111111;
+}
+
+.ps-item:hover .pi-price span {
+  color: #444444;
+}
+
+.ps-item:hover ul li {
+  color: #111111;
+  font-weight: 600;
+}
+
+.ps-item:hover a.btn {
+  background-color: #e31c25 !important;
+  font-weight: 700;
+
+}
+
   
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
-   
-  .react-horizontal-scrolling-menu--wrapper {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
+@media screen and (max-width:1200px) {
   .detail-image {
-    width: 729px;
-    height: 742px;
-  }
-  
-  .hero-banner-img {
-    position: absolute;
-    right: 40px;
-    top: 15%;
-    width: 500px;
-    height: 500px;
-    margin-top: -100px;
-    box-shadow: 0 2px 12px 1px #023047;
-    border-radius: 30px;  
-  }
-  
-  .exercise-card {
     width: 300px;
-    height: 345px;
-    background: #fff;
-    border-top: 4px solid #cdb4db;
-    border-bottom-left-radius: 20px;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding-bottom: 10px;
-    transform: scale(1, 1);
-    transition: 0.3s all ease-in-out;
-  }
-  
-  .exercise-card img {
-    height: 326px;
-  }
-  
-  .bodyPart-card {
-    transform: scale(1, 1);
-    transition: 0.3s all ease-in-out;
-  }
-  
-  .exercise-card:hover,
-  .bodyPart-card:hover {
-    transform: scale(1.1, 1.1);
-  }
-  
-  .search-btn:hover {
-    color: #FF2625 !important;
-    border: 1px solid #FF2625 !important;
+    height: 300px;
   }
 
-  .swiper {
-    width: 300px;
-    height: 300px;
-    padding: 50px;
+
+  .react-horizontal-scrolling-menu--scroll-container {
+    width: 500px;
   }
-  
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
+
+
+  .hero-banner-img {
+    display: none;
   }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
+
+  .exercise-card {
+    width: 320px;
+  }  
+}
+
+@media screen and (max-width:400px) {
+  .exercise-card {
+    width: 280px;
   }
-  
-  
-    
-  @media screen and (max-width:1200px) {
-    .detail-image {
-      width: 300px;
-      height: 300px;
-    }
-  
-  
-    .react-horizontal-scrolling-menu--scroll-container {
-      width: 500px;
-    }
-  
-  
-    .hero-banner-img {
-      display: none;
-    }
-  
-    .exercise-card {
-      width: 320px;
-    }  
-  }
-  
-  @media screen and (max-width:400px) {
-    .exercise-card {
-      width: 280px;
-    }
-  }
+}
